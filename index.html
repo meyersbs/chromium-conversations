@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ACL 2018 Dataset</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+  </head>
+  <body>
+    <header>
+      <i class="fa fa-fw fa-comments"></i>&nbsp;Chromium Conversations
+      <span>| A Dataset for Identifying Actionable Feedback in Collaborative Software Development</span>
+    </header>
+    <div id="content">
+      <div class="flex-row" style="display: flex;">
+        <div class="flex-content flex-1">
+          <div class="flex-header" id="description">
+            <i class="fa fa-fw fa-comment"></i>&nbsp;Description
+          </div>
+          <div class="flex-text">
+            Software developers and testers have long struggled with how to
+            elicit proactive responses from their coworkers when reviewing code
+            for security vulnerabilities and errors. For a code review to be
+            successful, it must not only identify potential problems but also
+            elicit an active response from the colleague responsible for
+            modifying the code. To understand the factors that contribute to
+            this outcome, we analyze a novel dataset of more than one million
+            code reviews for the Google Chromium project, from which we extract
+            linguistic features of feedback that elicited responsive actions
+            from coworkers. Using a manually-labeled subset of reviewer
+            comments, we trained a highly accurate classifier to identify
+            <em>'acted-upon'</em> comments (AUC = 0.85). Our results
+            demonstrate the utility of our dataset, the feasibility of using
+            NLP for this new task, and the potential of NLP to improve our
+            understanding of how communications between colleagues can be
+            authored to elicit positive, proactive responses.
+          </div>
+        </div>
+      </div>
+      <div class="flex-row">
+        <div class="flex-content flex-1">
+          <div class="flex-header id="data">
+            <i class="fa fa-fw fa-comments"></i>&nbsp;Datasets
+          </div>
+          <div class="flex-text" id="datasets">
+            There are two datasets available for download. In each one, we have
+            (to the best of our knowledge) de-identified all usernames and
+            email addresses of developers involved in the Chromium Project. The
+            datasets described below were exported from the PostgreSQL database
+            used in our research. Everything needed to recollect and recreate
+            our database is available <a href="https://github.com/andymeneely/sira-nlp/" target="_blank">here</a>.
+            A <span>README.md</span> file, which explains the structure of the
+            datasets, is included in the download below.
+            <br><br>
+            <span>CONVERSATIONS:</span> This is the full dataset containing
+            over 1.5 million comments posted by developers reviewing proposed
+            code changes. The dataset also includes the values we calculated for
+            all nine linguistic features (described in Section 4 of the paper
+            cited below).
+            <br><br>
+            <span>ANNOTATIONS:</span> This dataset is a subset of the
+            <span>CONVERSATIONS</span> dataset. It contains the data used in
+            the classification experiment outlined in Section 5 of the paper
+            cited below (2,994 comments automatically identified as <em>acted-upon</em>
+            and 800 comments manually identified as <em>not (known-to-be) acted-upon</em>).
+            <br><br>
+            Download: <a href=""><span>chromium_conversations.tar.gz</span></a> | 270MB Compressed; 1GB Raw
+          </div>
+        </div>
+      </div>
+      <div class="flex-row" id="legal">
+        <div class="flex-content flex-2" id="citation">
+          <div class="flex-header">
+            <i class="fa fa-fw fa-file-alt"></i>&nbsp;Citation
+          </div>
+          <div class="flex-text">
+            We encourage you to use this dataset in your research. If you do, we ask that you please cite:
+            <div class="citation">
+              <div class="title">
+                A Dataset for Identifying Actionable Feedback in Collaborative Software Development.
+              </div>
+              <div class="authors">
+                B.S. Meyers, N. Munaiah, E. Prud'hommeaux, A. Meneely, C.O. Alm, J. Wolff, and P.K. Murukannaiah.
+              </div>
+              <div class="location">
+                Proceedings of the 2018 Meeting for the Association for Computational Linguistics <em>(ACL)</em>.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex-content flex-1" id="license">
+          <div class="flex-header">
+            <i class="fa fa-fw fa-save"></i>&nbsp;License
+          </div>
+          <div class="flex-text">
+            Rietveld, the system that facilitates code review in Chromium, is
+            licensed under the Apache v2.0 license.
+            <br>
+            <br>
+            The datasets we are releasing are licensed under the Creative
+            Commons ShareAlike license (<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC-BY-SA</a>).
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      Copyright &copy; 2018 Benjamin S. Meyers &lt;<a href="mailto:bsm9339@rit.edu">bsm9339@rit.edu</a>&gt;
+    </footer>
+  </body>
+</html>

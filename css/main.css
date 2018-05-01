@@ -1,0 +1,111 @@
+h1 { font-size: 16pt; }
+
+a { color: black; font-weight: bold; }
+
+a:hover { color: #FF7F00; text-decoration: underline; font-weight: bold; }
+
+body {
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    width: 90%;
+    background-color: #CCCCCC;
+    height: 100vh;
+}
+
+.flex-content {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+.flex-row { display: flex; }
+
+.flex-1 { flex: 1; }
+
+.flex-2 { flex: 2; }
+
+.flex-header {
+    background-color: #333333;
+    color: white;
+    font-weight: bold;
+    padding: 0.5em;
+    border-radius: 0.25em;
+    margin-bottom: 0.5em;
+}
+
+.flex-text {
+    padding-left: 1em;
+    padding-right: 1em;
+    text-align: justify;
+    font-size: 11pt;
+}
+
+.citation {
+    padding: 0.5em;
+    background-color: #999999;
+    border-radius: 0.25em;
+    margin-top: 0.5em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    font-family: 'Roboto', sans-serif;
+}
+
+#datasets span {
+    font-family: 'Roboto', sans-serif;
+    font-size: 10pt;
+    font-weight: bold;
+}
+
+.citation .title {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.citation .authors, .citation .location { padding-left: 1em; }
+
+header {
+    padding: 0.5em;
+    font-weight: bold;
+    font-size: 16pt;
+    background-color: #333333;
+    color: white;
+    border-radius: 0 0 0.25em 0.25em;
+}
+
+header span {
+    font-size: 12pt;
+    font-weight: normal;
+    font-style: italic;
+    font-family: 'Roboto', sans-serif;
+}
+
+footer {
+    margin-top: 0.5em;
+    padding-top: 0.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-bottom: 5px;
+    font-weight: bold;
+    font-size: 8pt;
+    background-color: #333333;
+    color: white;
+    border-radius: 0.25em;
+    font-family: 'Roboto', sans-serif;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+#legal { flex-direction: column; }
+
+@media (min-width: 1125px) {
+    #legal { flex-direction: row; }
+}
