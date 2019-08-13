@@ -1,5 +1,7 @@
 # Chromium Conversations
 
+**NOTE:** This data's new home is [here](https://zenodo.org/record/2590548). Please download the dataset from there to ensure it is the most up-to-date version.
+
 #### A Dataset for Identifying Actionable Feedback in Collaborative Software Development
 
 ### Datasets
